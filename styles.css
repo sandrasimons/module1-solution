@@ -1,4 +1,58 @@
-.message {
-    font-size: 1.3em;
-    font-weight: bold;
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://source.unsplash.com/0JFveX0c778/1500x1500') center no-repeat;
+    background-size: cover;
+}
+
+.container {
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 13px rgba(173, 173, 173, 0.53);
+    text-align: center;
+    padding: 1em;
+    background: rgba(116, 116, 116, 0.69);
+    width: 460px;
+}
+
+.form-field {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.form-btn {
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid white;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+.form-btn:hover {
+    background: rgb(116, 116, 116);
+}
+
+h1,
+h2 {
+    font-weight: 100;
+}
+
+input {
+    padding: .5em;
 }

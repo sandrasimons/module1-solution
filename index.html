@@ -4,23 +4,23 @@
 <head>
     <title>Lunch Checker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body ng-app="LunchCheck">
     <div class="container" ng-controller="LunchCheckController">
         <h1>Lunch Checker</h1>
-        <div class="form-group">
-            <input id="lunch-menu" type="text" placeholder="list comma separated dishes you usually have for lunch" class="form-control">
-        </div>
-        <div class="form-group">
-            <button class="btn btn-default">Check If Too Much</button>
-        </div>
+        <h2>How much food is too much?</h2>
+        <form ng-submit="handleFoodItems()">
+            <input type="text" placeholder="list comma separated dishes" class="form-field" ng-model="enteredFoods">
+            <input class="form-btn" type="submit" value="Check If Too Much">
+        </form>
         <div class="form-group message">
-            <!-- Your message can go here. -->
+            <h3>{{message}}</h3>
         </div>
     </div>
-    
+
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
 
