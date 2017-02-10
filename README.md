@@ -1,2 +1,4 @@
 # module1-solution
-Module 1 assignment for Courseras AngularJS Course
+# Food Check
+
+Module 1 assignment for Coursera Course: Single Page Web Applications with AngularJS
